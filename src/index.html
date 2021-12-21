@@ -10,11 +10,11 @@
 
   <body>
     <!-- body -->
-    <div class="width">
+    <div class="width px-2">
       <!-- header -->
       <nav class="flex flex-col">
         <div class="flex justify-between opacity-90 my-2">
-          <div class="flex space-x-3">
+          <div class="flex space-x-3 hidden md:flex">
             <h2 class="text-xs">
               Hi <span class="text-blue-500">Sign in</span>or
               <span class="text-blue-500">register</span>
@@ -22,7 +22,7 @@
             <h2 class="text-xs">Daily Deals</h2>
             <h2 class="text-xs">Help & Contact</h2>
           </div>
-          <div class="flex text-sm space-x-3">
+          <div class="flex text-sm space-x-3 ml-3">
             <h2>Ship to</h2>
             <h2>Sell</h2>
             <h2 class="mdi mdi-chevron-down">Watchlist</h2>
@@ -46,7 +46,7 @@
           <div class="flex border border-black items-center">
             <i class="mdi mdi-magnify text-xl mx-4"></i>
             <input
-              class="pr-96 py-2"
+              class="md:pr-96 py-2"
               type="text"
               placeholder="Search for anything"
             />
@@ -82,10 +82,22 @@
               <option value="">Shoping</option>
             </select>
           </div>
-          <button class="bg-blue-600 mx-4 text-white text-sm px-16 py-3">
+          <button
+            class="
+              bg-blue-600
+              hidden
+              md:block
+              mx-4
+              text-white text-sm
+              px-16
+              py-3
+            "
+          >
             Search
           </button>
-          <button class="text-xs hover:text-blue-600 opacity-50">
+          <button
+            class="text-xs hidden md:block hover:text-blue-600 opacity-50"
+          >
             Advanced
           </button>
         </div>
@@ -123,13 +135,22 @@
           src="https://i.ebayimg.com/thumbs/images/g/cgUAAOSwzx1gYy7e/s-l1200.webp"
           alt=""
         />
+
         <div class="flex mt-10 mb-4">
           <h2 class="text-2xl font-semibold mr-8f">Explore Popular brands</h2>
           <h2 class="text-2xl ml-8">
             See all <i class="mdi mdi-arrow-right"></i>
           </h2>
         </div>
-        <div class="flex text-center justify-center space-x-10">
+        <div
+          class="
+            flex flex-wrap
+            text-center
+            justify-center
+            items-center
+            space-y-8 space-x-10
+          "
+        >
           <div class="flex flex-col space-y-4 bg-white">
             <img
               class="w-36 h-36 rounded-full"
@@ -196,7 +217,15 @@
             See all <i class="mdi mdi-arrow-right"></i>
           </h2>
         </div>
-        <div class="flex text-center justify-center space-x-10">
+        <div
+          class="
+            flex flex-wrap
+            text-center
+            justify-center
+            items-center
+            space-x-10 space-y-8
+          "
+        >
           <div class="flex flex-col bg-white">
             <img
               class="w-36 h-36 rounded-full"
@@ -260,7 +289,15 @@
             See all <i class="mdi mdi-arrow-right"></i>
           </h2>
         </div>
-        <div class="flex text-center justify-center space-x-10">
+        <div
+          class="
+            flex flex-wrap
+            text-center
+            justify-center
+            items-center
+            space-x-10 space-y-8
+          "
+        >
           <div class="flex flex-col space-y-4 bg-white">
             <img
               class="w-36 h-36"
@@ -310,9 +347,11 @@
             <h1 class="text-2xl">Samsung</h1>
           </div>
         </div>
+
         <div
           class="
-            flex
+            flex flex-col
+            md:flex-row
             bg-green-700
             text-white
             p-4
@@ -321,7 +360,7 @@
             items-center
           "
         >
-          <div class="flex flex-col">
+          <div class="flex flex-col mb-4">
             <h1 class="font-semibold text-2xl">
               Lorem ipsum dolor sit amet foe ad covid-19
             </h1>
@@ -348,7 +387,15 @@
       <!--End Container -->
       <hr />
       <!-- Header -->
-      <div class="flex mt-10 justify-between">
+      <div
+        class="
+          flex flex-wrap
+          space-y-6 space-x-6
+          mt-10
+          items-start
+          justify-between
+        "
+      >
         <div class="opacity-60">
           <h1 class="font-semibold">Buy</h1>
           <h3>Registration</h3>
